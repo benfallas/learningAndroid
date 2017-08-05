@@ -28,7 +28,7 @@
         android:layout_marginTop="52dp" />
 
     <Button
-        android:text="NextScreen"
+        android:text="@+id/NextScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/click_me_button"
@@ -36,5 +36,23 @@
         android:layout_marginStart="54dp"
         android:id="@+id/button"
         android:onClick="onNextScreenButtonClicked" />
+
+    <Button
+        android:text="butterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/click_me_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:id="@+id/butterButton" />
+
+    <TextView
+        android:text=" butterKnifeTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/click_me_button"
+        android:layout_marginTop="30dp"
+        android:id="@+id/butterTextview"
+        android:layout_alignEnd="@+id/butterButton" />
 
 </RelativeLayout>
