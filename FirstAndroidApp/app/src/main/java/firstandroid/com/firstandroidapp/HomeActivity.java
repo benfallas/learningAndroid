@@ -1,10 +1,12 @@
 package firstandroid.com.firstandroidapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -25,4 +27,12 @@ public class HomeActivity extends AppCompatActivity {
         });
 
     }
+
+    public void onNextScreenButtonClicked(View view) {
+        Toast.makeText(this, "Did it again!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+
+    }
+
 }
